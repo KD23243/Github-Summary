@@ -24,6 +24,6 @@ service / on new http:Listener(9090) {
             limit 10
             select {number: issue.number, title: issue.title.toString()};
 
-            return summary;
+        return summary;
     }
 }
